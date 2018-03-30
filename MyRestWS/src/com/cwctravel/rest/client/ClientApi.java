@@ -8,7 +8,7 @@ public class ClientApi {
 	public static void main(String[] args) {
 		try {
 			Client client = Client.create();
-			WebResource webResource = client.resource("http://localhost:8080/MyRestWS/webservice/json/airports");
+			WebResource webResource = client.resource("http://localhost:8080/MyRestWS/api/webservice/json/airports");
 			ClientResponse response = webResource.accept("application/json").get(ClientResponse.class);
 			if(response.getStatus() != 200) {
 				throw new RuntimeException("Failed : HTTP error code : " + response.getStatus());

@@ -17,18 +17,18 @@ import com.cwctravel.rest.api.info.AirportInfo;
 
 /*
  * XML
- * http://localhost:8080/MyRestWS/webservice/airports
- * http://localhost:8080/MyRestWS/webservice/airports/SFO
+ * http://localhost:8080/MyRestWS/api/webservice/airports
+ * http://localhost:8080/MyRestWS/api/webservice/airports/SFO
  * 
  * JSON
- * http://localhost:8080/MyRestWS/webservice/json/airports/
- * http://localhost:8080/MyRestWS/webservice/json/airports/SFO
+ * http://localhost:8080/MyRestWS/api/webservice/json/airports/
+ * http://localhost:8080/MyRestWS/api/webservice/json/airports/SFO
  * 
  * Add airport
- * http://localhost:8080/MyRestWS/webservice/airports/add/BLR/Bangalore Int airport
+ * http://localhost:8080/MyRestWS/api/webservice/airports/add/BLR/Bangalore Int airport
  * 
  * Delete airport
- * http://localhost:8080/MyRestWS/webservice/airports/delete/BLR
+ * http://localhost:8080/MyRestWS/api/webservice/airports/delete/BLR
  * 
  * 
  */

@@ -12,7 +12,7 @@ import javax.ws.rs.core.UriInfo;
 
 @Path("/users")
 public class UserService {
-	// http://localhost:8080/MyRestWS/users/query?from=100&to=200&orderBy=age&orderBy=name
+	// http://localhost:8080/MyRestWS/api/users/query?from=100&to=200&orderBy=age&orderBy=name
 	@GET
 	@Path("/query")
 	public Response getUsers(@DefaultValue("1000") @QueryParam("from") int from, @DefaultValue("999") @QueryParam("to") int to,
@@ -23,7 +23,7 @@ public class UserService {
 	}
 
 	@GET
-	@Path("/query")
+	@Path("/query-users")
 	public Response getUsers(@Context UriInfo info) {
 
 		String from = info.getQueryParameters().getFirst("from");

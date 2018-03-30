@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 public class BookService {
 	// Test Git
 	// the matrix parameter is "author=umashankar", separate by a semi colon ";"
-	// http://localhost:8080/MyRestWS/books/2011;author=umashankar;country=malaysia
+	// http://localhost:8080/MyRestWS/api/books/2011;author=umashankar;country=malaysia
 	@GET
 	@Path("{year}")
 	public Response getBooks(@PathParam("year") String year, @MatrixParam("author") String author, @MatrixParam("country") String country) {

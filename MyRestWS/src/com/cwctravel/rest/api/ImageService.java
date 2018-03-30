@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response.ResponseBuilder;
 @Path("/image")
 public class ImageService {
 
-	private static final String FILE_PATH = "c:\\mkyong-logo.png";
+	private static final String FILE_PATH = "d:\\uploaded\\image.png";
 
 	@GET
 	@Path("/get")
@@ -24,6 +24,13 @@ public class ImageService {
 		response.header("Content-Disposition", "attachment; filename=image_from_server.png");
 		return response.build();
 
+	}
+
+	@GET
+	@Produces("image/png")
+	public Response getImage() {
+		File file = new File(FILE_PATH);
+		return Response.ok(file).build();
 	}
 
 }
