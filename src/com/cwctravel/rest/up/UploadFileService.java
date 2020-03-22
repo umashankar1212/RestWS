@@ -18,7 +18,7 @@ import javax.ws.rs.core.Response.ResponseBuilder;
 import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 
-@Path("/files")
+@Path("files")
 public class UploadFileService {
 	private static final String FILE_PATH = "c:\\file.log.xml";
 
